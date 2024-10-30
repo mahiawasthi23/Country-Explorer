@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    margin: 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.country-list {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.country-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+}
+
+.country-card img {
+    width: 100%;
+    height: auto;
+}
+
+.favorites {
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin: 20px; 
+    padding: 15px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-card {
+    background: #e7f3ff; 
+    border: 1px solid #007bff; 
+    border-radius: 5px; 
+    margin: 10px; 
+    padding: 10px; 
+    text-align: center; 
+    width: 150px; 
+    transition: transform 0.2s; 
+}
+
+.favorite-card:hover {
+    transform: scale(1.05); 
+}
+
+.favorite-card img {
+    width: 100%; 
+    height: auto; 
+}
+
+.favorite-card .favorite-icon {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 10px; 
+}
+
+.favorite-card .favorite-icon:hover {
+    color: #d9534f; 
+}
+
+.details-popup {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.details-popup h2 {
+    margin-top: 0;
+}
+
+button#load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#suggestions {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 300px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.view-all {
+    font-weight: bold;
+    text-align: center;
+}
